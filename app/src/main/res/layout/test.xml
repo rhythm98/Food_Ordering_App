@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/red_gray"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_dish"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_round_fastfood_24"
+            card_view:layout_constraintDimensionRatio="H,16:9"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/fav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/sl_favourite_24dp"
+            android:buttonTint="@color/pink"
+
+            android:padding="8dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/tv_dish_name"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:padding="8dp"
+            android:text="Veggie Burger"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/iv_dish" />
+
+        <!--        <TextView-->
+        <!--            android:padding="8dp"-->
+        <!--            android:id="@+id/tv_dish_description"-->
+        <!--            style="@style/TextAppearance.AppCompat.Subhead"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/acme"-->
+
+        <!--            android:text="Sasti sos daal kar banaya gaya"-->
+        <!--            card_view:layout_constraintEnd_toEndOf="parent"-->
+        <!--            card_view:layout_constraintStart_toStartOf="parent"-->
+        <!--            card_view:layout_constraintTop_toBottomOf="@id/tv_dish_name"-->
+        <!--            card_view:layout_constraintBottom_toTopOf="@id/tv_dish_price"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#B2000000"
+            android:fontFamily="@font/varela_round"
+            android:padding="4dp"
+            android:text="30 mins"
+            android:textColor="@color/Grey_Color"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@id/iv_dish"
+            card_view:layout_constraintCircleRadius="8dp"
+            card_view:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/veg1"
+            android:background="#FFFFFF"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="@id/iv_dish"/>
+<!--        <RatingBar-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.AppCompat.RatingBar.Indicator"-->
+<!--            android:id="@+id/rating_dish"-->
+<!--            card_view:layout_constraintStart_toEndOf="@id/tv_dish_name"-->
+<!--            card_view:layout_constraintBottom_toTopOf="@id/tv_dish_price"-->
+<!--            card_view:layout_constraintTop_toBottomOf="@id/iv_dish"-->
+<!--            card_view:layout_constraintEnd_toEndOf="parent"/>-->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addItem"
+            android:id="@+id/addBtn"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_dish_name"
+            android:text="ADD"/>
+        <TextView
+
+            android:id="@+id/tv_dish_price"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:padding="8dp"
+            android:text="\u20B9180"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

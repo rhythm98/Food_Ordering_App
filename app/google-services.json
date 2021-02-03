@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "611942523266",
+    "project_id": "chaat-bae",
+    "storage_bucket": "chaat-bae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611942523266:android:b5145f1d39a786dd9def9b",
+        "android_client_info": {
+          "package_name": "com.example.kitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611942523266-h2lqnlu8o5t5eh4ii9ehm3lgqb00pqqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kitchen",
+            "certificate_hash": "fc8677632b539b161631174596df2d224612184f"
+          }
+        },
+        {
+          "client_id": "611942523266-9i8t3b4vk46kfo2vje5677r91coubh30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTRV3oaQMUV4TvVFsMMOo5ft4a05EV5Ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611942523266-9i8t3b4vk46kfo2vje5677r91coubh30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
